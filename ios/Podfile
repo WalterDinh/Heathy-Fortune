@@ -1,0 +1,79 @@
+# frozen_string_literal: true
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+# require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+target 'Yo-Learner' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Yo-Learner
+
+  pod 'React', path: '../node_modules/react-native', subspecs: %w[
+    Core
+    CxxBridge
+    RCTImage
+    RCTNetwork
+    RCTText
+    RCTWebSocket
+    DevSupport
+    RCTAnimation
+    RCTLinkingIOS
+  ]
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga'
+  # Third party deps podspec link
+  pod 'DoubleConversion', podspec: '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', podspec: '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', podspec: '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  # WEB RTC
+  pod 'react-native-webrtc', path: '../node_modules/react-native-webrtc'
+  pod 'ReactNativeIncallManager', path: '../node_modules/react-native-incall-manager'
+  pod 'RNCallKeep', path: '../node_modules/react-native-callkeep'
+
+  pod 'RNFastImage', path: '../node_modules/react-native-fast-image/RNFastImage.podspec'
+  pod 'AccountKit', '~> 5.0.1'
+  pod 'RNAccountKit', path: '../node_modules/react-native-facebook-account-kit/ios'
+#   pod 'RNFS', path: '../node_modules/react-native-fs'
+  pod 'RNSha256', :path => '../node_modules/react-native-sha256'
+  pod 'RNIap', :path => '../node_modules/react-native-iap'
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+  pod 'RNColorMatrixImageFilters', :path => '../node_modules/react-native-color-matrix-image-filters'
+  pod 'react-native-background-timer', :path => '../node_modules/react-native-background-timer'
+
+#   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
+  pod 'Fabric', '~> 1.10.1'
+  pod 'Crashlytics'
+
+  post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+      if target.name == "React"
+          target.remove_from_project
+      end
+    end
+  end
+
+  target 'Yo-LearnerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
+
+target 'Yo-Learner-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Yo-Learner-tvOS
+
+  target 'Yo-Learner-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end

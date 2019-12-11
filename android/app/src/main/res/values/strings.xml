@@ -1,0 +1,11 @@
+<resources>
+    <!-- STAGING -->
+    <!-- <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">wcLdYLCMLiPc55stQKguWR2M9g-L-WY0uvWnN</string> -->
+    <!-- PRODUCT -->
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">arD5rATgjjLCR8CYY1nDSXbtlzETf0RUG5QZf</string>
+    <string name="app_name">Expert</string>
+    <!-- for Account kit -->
+    <string name="fb_app_id">1437666456309060</string>
+    <string name="ak_client_token">e7bd6b0bc17fc30ff330e86250f15814</string>
+    <string name="google_map_id">AIzaSyDQq0_aa9IBHwO-DX19mb29bhVe6w_8Rfs</string>
+</resources>

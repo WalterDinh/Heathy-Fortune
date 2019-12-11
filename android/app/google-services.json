@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1058017876410",
+    "firebase_url": "https://expert-bb88c.firebaseio.com",
+    "project_id": "expert-bb88c",
+    "storage_bucket": "expert-bb88c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058017876410:android:2466c5f26c7a411d50e583",
+        "android_client_info": {
+          "package_name": "com.expert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058017876410-cce677i0nccsbmdcer54pac72hhto38e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA33J_9j96UpGDJH1YJ4IG7jJZw1ULLtiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058017876410-cce677i0nccsbmdcer54pac72hhto38e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
