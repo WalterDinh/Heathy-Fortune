@@ -2,7 +2,7 @@ import { responsiveFontSize } from "react-native-responsive-dimensions";
 import { Dimensions, Platform, StatusBar } from "react-native";
 import { getStatusBarHeight, isIphoneX } from "react-native-iphone-x-helper";
 
-export const HOST = "http://192.168.0.222:3000/api/";
+export const HOST = "http://45.117.170.39/econsult/api/";
 
 export const VERSION = "1.3.6";
 
