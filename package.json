@@ -36,7 +36,7 @@
         "react-native-elements": "^1.1.0",
         "react-native-face-pile": "^1.9.0",
         "react-native-facebook-account-kit": "1.1.0",
-        "react-native-fast-image": "^7.0.0",
+        "react-native-fast-image": "^8.3.0",
         "react-native-firebase": "^5.4.2",
         "react-native-floating-action": "^1.18.0",
         "react-native-fs": "^2.13.3",
